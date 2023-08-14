@@ -22,21 +22,21 @@ const Nav = () => {
         </button>
 
         {/* Desktop Navigation (Visible only in desktop view) */}
-        <ul className="hidden md:flex space-x-4 md:space-x-6">
+        <ul className="hidden md:flex space-x-4 md:space-x-6 items-center">
           <li><a href="/" className="text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Home</a></li>
           <li><a href="#" className="text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Search</a></li>
           <li><a href="#" className="text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Data Grid</a></li>
+          <div className="text-black text-sm font-semibold p-2 rounded-lg cursor-pointer hover:text-white hover:bg-blue-500">Know More</div>
         </ul>
 
-        <div className="text-black text-sm font-semibold p-2 rounded-lg cursor-pointer hover:text-white hover:bg-blue-500 hidden">Know More</div>
       </div>
 
       {/* Mobile Menu (Visible only in mobile view) */}
       <ul className={`md:hidden space-y-2 ${isMenuOpen ? 'block' : 'hidden'}`}>
-        <li><a href="/" className="block text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Home</a></li>
-        <li><a href="#" className="block text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Search</a></li>
-        <li><a href="#" className="block text-black text-sm hover:text-blue-500 hover:border-b-2 hover:border-blue-500">Data Grid</a></li>
-        <li><div className="block text-black text-sm font-semibold p-2 rounded-lg cursor-pointer hover:text-white hover:bg-blue-500">Know More</div></li>
+        <li><a href="/" className="block text-black text-sm mt-2">Home</a></li>
+        <li><a href="#" className="block text-black text-sm mt-2">Search</a></li>
+        <li><a href="#" className="block text-black text-sm mt-2">Data Grid</a></li>
+        <li><div className="block text-black text-sm font-semibold p-2 rounded-lg cursor-pointer">Know More</div></li>
       </ul>
     </nav>
   );
